@@ -1,17 +1,21 @@
 package main.java.org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumTest {
-    public static void main(String[] args) {
-        // Set the path for the ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver_linux64/chromedriver");
+
+    @Test
+    public void testPageLoad() {
+        // Your test code here
+        WebDriverManager.chromedriver().setup();
 
         // Set Chrome options
         ChromeOptions options = new ChromeOptions();
