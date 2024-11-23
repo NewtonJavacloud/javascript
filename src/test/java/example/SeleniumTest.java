@@ -20,9 +20,9 @@ public class SeleniumTest {
         // Set Chrome options
         ChromeOptions options = new ChromeOptions();
           options.addArguments("--headless"); // Headless mode (non-GUI)
-          options.addArguments("--autoplay-policy=no-user-gesture-required");
-          options.addArguments("--no-sandbox");
-          options.addArguments("--disable-setuid-sandbox");
+          // options.addArguments("--autoplay-policy=no-user-gesture-required");
+          // options.addArguments("--no-sandbox");
+          // options.addArguments("--disable-setuid-sandbox");
 
         // Initialize the WebDriver
         WebDriver driver = new ChromeDriver(options);
