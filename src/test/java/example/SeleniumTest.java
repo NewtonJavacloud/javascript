@@ -17,10 +17,10 @@ public class SeleniumTest {
         WebDriverManager.chromedriver().driverVersion("131").setup();
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless"); // Enable headless mode
-        options.addArguments("--disable-software-rasterizer"); // Disable software rasterizer
-        options.addArguments("--disable-gpu"); // Disable GPU hardware acceleration
-        options.addArguments("--no-sandbox"); // Disable sandbox
+        //options.addArguments("--headless"); // Enable headless mode
+        //options.addArguments("--disable-software-rasterizer"); // Disable software rasterizer
+        //options.addArguments("--disable-gpu"); // Disable GPU hardware acceleration
+        //options.addArguments("--no-sandbox"); // Disable sandbox
         options.addArguments("--autoplay-policy=no-user-gesture-required"); // Auto-play videos
         options.addArguments("--start-maximized"); // Auto play videos
 
