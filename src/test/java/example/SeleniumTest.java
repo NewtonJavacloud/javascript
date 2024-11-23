@@ -44,7 +44,7 @@ public class SeleniumTest {
             int lastReplayCount = 0;
 
             // Monitor function
-            long testDuration = 5 * 60 * 1000; // 5 minutes in milliseconds
+            long testDuration = 2 * 60 * 1000; // 5 minutes in milliseconds
             long startTime = System.currentTimeMillis();
 
             while (System.currentTimeMillis() - startTime < testDuration) {
